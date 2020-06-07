@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="icon" href="data:,">
+    <title>Reaching for the Skynet</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="top_bar">
+        <img src="{{url_for('static', filename='backgrounds/1146025.png')}}" id="menu_control">
+        <table>
+            <tr>
+                <td>
+                    <a href="/">
+                        <div id="home" class="top_left">
+                            <div class="left_txt">Home Page</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/two">
+                        <div id="about" class="top_left">
+                            <div class="left_txt">Learn About Water</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/three">
+                        <div id="meet" class="top_left">
+                            <div class="left_txt">Current Water State</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/"><img src="{{url_for('static', filename='favicon.ico')}}" id="logo"></a>
+                </td>
+                <td>
+                    <a href="/four">
+                        <div id="blog_title" class="top_left">
+                            <div class="left_txt">Water Usage Prediction</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/five">
+                        <div id="com" class="top_left">
+                            <div class="left_txt">Game</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/six">
+                        <div id="something" class="top_left">
+                            <div class="left_txt">Contact Us</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="first-body" class="frontpage">
+        <div id="name" class="intro">WaterAlert</div>
+        <div id="welcome" class="intro">Notifications of Flood/Drought and Water Usage</div>
+    </div>
+</body>
+<!-- <script src="{{ url_for('static', filename='index.js') }}"></script> -->
+<!-- <script src="index.js"></script> -->
+
+</html>

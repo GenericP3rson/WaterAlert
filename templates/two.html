@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="icon" href="data:,">
+    <title>Reaching for the Skynet</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="top_bar">
+        <img src="{{url_for('static', filename='backgrounds/1146025.png')}}" id="menu_control">
+        <table>
+            <tr>
+                <td>
+                    <a href="/">
+                        <div id="home" class="top_left">
+                            <div class="left_txt">Home Page</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/two">
+                        <div id="about" class="top_left">
+                            <div class="left_txt">Learn About Water</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/three">
+                        <div id="meet" class="top_left">
+                            <div class="left_txt">Current Water State</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/"><img src="{{url_for('static', filename='favicon.ico')}}" id="logo"></a>
+                </td>
+                <td>
+                    <a href="/four">
+                        <div id="blog_title" class="top_left">
+                            <div class="left_txt">Water Usage Prediction</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/five">
+                        <div id="com" class="top_left">
+                            <div class="left_txt">Game</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/six">
+                        <div id="something" class="top_left">
+                            <div class="left_txt">Contact Us</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="us">
+        <div class="frontpage">
+            <div class="titlefont">Information</div>
+            <div id="welcome" class="intro">Info scraped from the web</div>
+        </div>
+        <div class="forepage">
+            <div class="subfont">What is a Flood?
+            Believe it or not, flooding is the deadliest type of severe weather. There’s probably a lot about floods and flooding
+            you don’t know.
+            
+            In this guide, we’ll go over everything there is to know about flooding; answering common questions like “What causes
+            flooding?” and “Where does flooding occur?”
+            
+            Use the buttons below to jump to the flood facts you care about the most, or read the entire Flooding 101 guide to
+            become an expert!</div>
+            <!-- <div class="titlefont" id="miss">Enrich Keystone's Robotics Program</div> -->
+        </div>
+        <div class = "forepage">
+            <div class = "subfont">
+                Droughts occur in nearly all types of climate. Of all the weather-related phenomena that can cause severe economic
+                impacts in the United States, droughts come in second only to hurricanes, according to the National Climatic Data
+                Center. But unlike hurricanes, which are easily identified and straightforward to classify in terms of wind speeds,
+                droughts are much tougher to define.
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="{{ url_for('static', filename='index.js') }}"></script> -->
+<!-- <script src="index.js"></script> -->
+
+</html>
