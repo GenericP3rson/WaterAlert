@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
     <link rel="icon" href="data:,">
-    <title>Reaching for the Skynet</title>
+    <title>WaterAlert</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}" />
     <style>
     </style>
@@ -66,8 +66,16 @@
     </div>
     </div>
     <div id="first-body" class="frontpage">
-        <div id="name" class="intro">WaterAlert</div>
-        <div id="welcome" class="intro">Notifications of Flood/Drought and Water Usage</div>
+        <div id="name" class="intro">Amount of Water to Use</div>
+        <div id="welcome" class="intro">Calculating the Water you can use based on location</div>
+    </div>
+    <div class = "forepage">
+        <div class = "subfont">
+            <br>
+            Inches of rain recently: {{inch}}<br><br>
+            Amount of water: {{rain}}<br><br>
+            Amount you can use: {{usage}}
+        </div>
     </div>
 </body>
 <!-- <script src="{{ url_for('static', filename='index.js') }}"></script> -->

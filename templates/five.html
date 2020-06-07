@@ -4,9 +4,16 @@
 <head>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
     <link rel="icon" href="data:,">
-    <title>Reaching for the Skynet</title>
+    <title>WaterAlert</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}" />
     <style>
+        iframe {
+            z-index: 10000;
+            width: 80%;
+            height: 60vh;
+            margin-top:10vh;
+            margin-left: 10%;
+        }
     </style>
 </head>
 
@@ -71,8 +78,8 @@
             <div id="welcome" class="intro">Try to take pictures of as many faucets as you can</div>
         </div>
         <div class="forepage">
-            <div class="subfont">We Strive To...</div>
-            <div class="titlefont" id="miss">Enrich Keystone's Robotics Program</div>
+            <div class="subfont">Get Points for Faucets that are Turned off!</div>
+            <iframe allow="camera *;"></iframe>
         </div>
     </div>
 </body>
